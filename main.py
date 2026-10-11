@@ -1,8 +1,11 @@
 from features import risk_scoring
 
+
 def main():
-    print(risk_scoring.final_merge())
-    
+    risk_scoring.final_merge().to_csv(
+        "files/output/enriched_risk_output.csv", index=False
+    )
+
 
 if __name__ == "__main__":
     main()
