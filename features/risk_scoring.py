@@ -1,0 +1,4 @@
+from features import schema_cleanup,windowing_and_feature_engineering
+
+schema_cleanup.deduplicate_and_join()
+windowing_and_feature_engineering.window_and_engineer_features()

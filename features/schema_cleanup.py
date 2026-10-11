@@ -7,11 +7,15 @@ def deduplicate_and_join():
     df_applications = open_file.open_file_and_normalize(constants.APPLICATIONS_CSV)
     raw_bureau_scores = open_file.open_file_and_normalize(constants.BUREAU_SCORES_JSON)
 
-    transformed_income = df_applications.groupby("education_level")[
+    median_dual = df_applications.groupby(["education_level", "employment_status"])[
         "monthly_income"
     ].transform("median")
-    filled_df_applications = df_applications.fillna(
-        {"monthly_income": transformed_income}
+    median_global = df_applications["monthly_income"].median()
+
+    filled_df_applications = df_applications.assign(
+        monthly_income=df_applications["monthly_income"]
+        .fillna(median_dual)
+        .fillna(median_global)
     )
 
     filled_df_applications["submission_date"] = pd.to_datetime(
