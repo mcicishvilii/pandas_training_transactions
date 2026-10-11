@@ -1,8 +1,8 @@
-from features import schema_cleanup,windowing_and_feature_engineering
+from features import risk_scoring
 
 def main():
-    print(schema_cleanup.deduplicate_and_join())
-    print(windowing_and_feature_engineering.window_and_engineer_features())
+    print(risk_scoring.final_merge())
+    
 
 if __name__ == "__main__":
     main()
