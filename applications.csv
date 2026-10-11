@@ -1,9 +1,9 @@
-appli   cant_id ,full_name,submission_date,monthly_income,education_level,employment_status
-APP001, Giorgi Beridze ,2026-09-01,2500.0,Bachelor,Employed
-APP002, Nino Kalandadze,09/02/2026,,Master,Employed
-APP001, Giorgi Beridze ,2026-09-03,2500.0,Bachelor,Employed
-APP003, Levan Jishkariani,2026-09-04,1200.0,High School,Unemployed
-APP004, Mariam Lomidze,09/05/2026,4200.0,PhD,Employed
-APP005, Irakli Mgeladze,2026-09-26,,Bachelor,Self-Employed
-APP006, Salome Kankia,16/11/2026,3100.0,Master,Employed
-APP002, Nino Kalandadze,2026-09-29,1800.0,Master,Employed
+applicant_id ,full_name,submission_date,monthly_income,education_level,employment_status
+APP001, Giorgi Beridze ,2025-09-01,2500.0,Bachelor,Employed
+APP002, Nino Kalandadze,09/02/2025,,Master,Employed
+APP001, Giorgi Beridze ,2025-09-03,2500.0,Bachelor,Employed
+APP003, Levan Jishkariani,2025-09-04,1200.0,High School,Unemployed
+APP004, Mariam Lomidze,09/05/2025,4200.0,PhD,Employed
+APP005, Irakli Mgeladze,09/06/2025,,Bachelor,Self-Employed
+APP006, Salome Kankia,09/07/2025,3100.0,Master,Employed
+APP002, Nino Kalandadze,2025-09-08,1800.0,Master,Employed
