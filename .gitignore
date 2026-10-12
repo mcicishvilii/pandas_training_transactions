@@ -1,1 +1,4 @@
 /samushao
+/venv
+*/__pycache__
+/files/output
